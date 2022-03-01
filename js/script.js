@@ -1,10 +1,11 @@
 function reverseString(str) {
     
-    var splitString = str.split("");
+    let splitString = str.split("");
     
-    var reverseArray = splitString.reverse(); 
+    let reverseArray = splitString.reverse(); 
     
-    var joinArray = reverseArray.join(""); 
+    let joinArray = reverseArray.join(""); 
     return joinArray; 
 }
-reverseString("hello");
+console.log(reverseString("torta"));
+
