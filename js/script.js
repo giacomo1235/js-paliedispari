@@ -1,4 +1,4 @@
-/* let str = prompt('txt')
+/*  let str = prompt('txt');
 
 function reverseString(str) {
     
@@ -8,24 +8,17 @@ function reverseString(str) {
     
     let joinArray = reverseArray.join(""); 
     return joinArray; 
-} */
-//console.log(reverseString(str));
+}
+console.log(reverseString(str));
 
-/* if (reverseString(str) == str) {
+if (reverseString(str) == str) {
     console.log ('palindromo')
 } else {
     console.log ('non palindromo')
-} */
-//const myButton = document.getElementById('verificaPalindromo')
-//myButton.addEventListener ('click', reverseString())
+} ;
+ */
 
-
-//utente sceglie pari o dispari
-// utente sceglie numero da 1 a 5
-// funzione numero random
-// somma =  numero utente  + numero random
-// if somma = scelta utente --> vinto
-// else perso
+// esercizio 2
 
 const sceltaUtente = prompt('pari o dispari?')
 const numeroUtente = parseInt(prompt('scegli un numero da uno a cinque'))
@@ -37,26 +30,28 @@ function getRandomNum() {
 
 
 let numeroRandom = getRandomNum() ;
-console.log(numeroUtente)
+console.log(numeroUtente);
 
-console.log(numeroRandom)
+console.log(numeroRandom);
 let somma = numeroRandom + numeroUtente ;
-console.log(somma)
-
+console.log(somma);
 
 function oddEven (numeroRandom, numeroUtente) {
-     if (somma % 2 == 0) {
-
-         console.log('pari')
-     } else {
-         console.log('dispari')
-     }
+    if (somma % 2 == 0) {
+        return 'pari'
+    }
+    return 'dispari'
+    
 }
-/* let pari = false
-let dispari = false
-fin tanto che pari = true e scelta utente = pari --> utente vince 
-else if pari = false e scelta utente = pari --> utente perde
-else if dispari = true e sceltautente == pari -- utente vince 
-else --> utente perde
- */
+
+let pariDispari = oddEven()
+ 
+if (sceltaUtente == 'pari' && pariDispari == 'pari') {
+    console.log('win')
+} else if (sceltaUtente == 'dispari' && pariDispari == 'dispari') {
+    console.log('win')
+} else {
+    console.log('perso')
+}
+
 
