@@ -46,18 +46,17 @@ console.log(somma)
 
 function oddEven (numeroRandom, numeroUtente) {
      if (somma % 2 == 0) {
+
          console.log('pari')
      } else {
          console.log('dispari')
      }
 }
+/* let pari = false
+let dispari = false
+fin tanto che pari = true e scelta utente = pari --> utente vince 
+else if pari = false e scelta utente = pari --> utente perde
+else if dispari = true e sceltautente == pari -- utente vince 
+else --> utente perde
+ */
 
-const pariDispari = oddEven();
-
-
-
-if (pariDispari == sceltaUtente ) {
-    console.log('vinto')
-} else {
-    console.log('perso')
-}
