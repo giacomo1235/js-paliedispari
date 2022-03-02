@@ -1,5 +1,4 @@
 let str = prompt('txt');
-
 function reverseString(str) {
     
     let splitString = str.split("");
@@ -7,12 +6,27 @@ function reverseString(str) {
     let reverseArray = splitString.reverse(); 
     
     let joinArray = reverseArray.join(""); 
-    return joinArray; 
+   /*  return joinArray;  */
+    
+    if (joinArray == str) {
+        return true;
+    } else {
+        return false;
+    } ; 
 }
-console.log(reverseString(str));
 
-if (reverseString(str) == str) {
-    console.log ('palindromo')
+if (reverseString(str)) {
+    document.getElementById('outputRisultato').innerHTML = 'PALINDROMO';
 } else {
-    console.log ('non palindromo')
-} ;
+        document.getElementById('outputRisultato').innerHTML = 'NON PALINDROMO';
+} ; 
+
+
+
+document.getElementById('outputFrase').innerHTML = reverseString(str);
+
+
+
+
+
+
